@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW Survey Form</title>
+    <style>
+        h1 {
+            font-size: 70px;
+            font-weight: lighter;
+            margin:0%;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: lighter;
+            margin-top: 1%;
+        }
+
+        #name, #surname, #email {
+            height: 24px;
+        }
+
+        p {
+            font-size:22px;
+        }
+
+        #comment {
+            line-height: 24px;
+        }
+
+        #submit {
+            border-style: none;
+            font-size: 15px;
+            padding: 6px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Clarusway Survey Form</h1>
+        <h3>Thank you for taking time to help us improve the platform</h3>
+    </header>
+    <section>
+        <form id="cw-survey-form" action>
+            <label for="name">Name</label><br><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            <br>
+            <label for="surname">Surname</label><br><br>
+            <input type="text" id="surname" name="surname" placeholder="Enter your Surname"><br>
+            <br>
+            <label for="email">Email</label><br><br>
+            <input type="text" id="email" name="email" placeholder="user@clarusway.com"><br>
+            <br>
+            <p>Which option best describes your current role?</p>
+                <select name="current-role" id="current-role">
+                    <option disabled selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="fulltimejob">Full Time Job</option>
+                    <option value="parttimejob">Part Time Job</option>
+                    <option value="fulltimelearner">Full Time Learner</option>
+                    <option value="nottosay">Prefer not to say</option>
+                </select>
+            <br>
+            <p>Would you recommend Clarusway to a friend?</p>
+                <label><input type="radio" name="recommend" value="definitely" class="radio" checked="">Definitely, Yes</label><br><br>
+                <label><input type="radio" name="recommend" value="maybe" class="radio" >Maybe</label><br><br>
+                <label><input type="radio" name="recommend" value="notsure" class="radio" >Not sure</label><br><br>
+                <label><input type="radio" name="recommend" value="undefinitely" class="radio" >Definitely, No</label>
+            <br>
+            <p>What is your favorite feature of Clarusway?</p>
+                <select name="feature" id="feature">
+                    <option disabled selected value="">Select an option</option>
+                    <option value="courses">Courses</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="mentors">Mentors</option>
+                </select>
+            <br>
+            <p>What would you like to see improved?</p>
+                <label><input type="checkbox" name="courses" value="frontend">Front-end Projects</label><br><br>
+                <label><input type="checkbox" name="courses" value="backend">Back-end Projects</label><br><br>
+                <label><input type="checkbox" name="courses" value="data">Data Science</label><br><br>
+                <label><input type="checkbox" name="courses" value="additional">Additional Courses</label>
+            <br>
+            <p>Any comment or suggestions?</p>
+                <label>
+                    <textarea name="comment" id="comment" cols="24" rows="2" placeholder="Enter your comment here...Thanks for your comments..."></textarea>
+                    <input type="submit" id="submit" value="Submit">
+                </label>
+            <br>
+        </form>
+    </section>
+</body>
+
+</html>
